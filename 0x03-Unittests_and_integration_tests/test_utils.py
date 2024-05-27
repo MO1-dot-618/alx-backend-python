@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """Defines unittests for utils.py."""
 import unittest
 from parameterized import parameterized
@@ -29,3 +29,7 @@ class TestAccessNestedMap(unittest.TestCase):
         """unit test for raising error"""
         with self.assertRaises(exception):
             access_nested_map(nested_map, path)
+
+
+if __name__ == '__main__':
+    unittest.main()
